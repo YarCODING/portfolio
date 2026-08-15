@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #ffc97a;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background-color: #030712;
+  color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6, .header {
+  font-family: 'Rubik', sans-serif;
+}
+
+::selection {
+  background: var(--color-primary);
+  color: black;
+}

@@ -1,0 +1,59 @@
+{% extends 'layouts/blank.html' %} 
+{% load static %}
+
+{% block content %}
+
+{% include 'portfolio/includes/hero.html' %}
+{% include 'portfolio/includes/about.html' %}
+{% include 'portfolio/includes/projects.html' %}
+{% include 'portfolio/includes/contact.html' %}
+
+<script src="{% static 'portfolio/js/magnetic-text.js' %}" defer></script>
+<script src="{% static 'portfolio/js/bg-canvas.js' %}" defer></script>
+<script src="{% static 'portfolio/js/animations.js' %}" defer></script>
+<script src="{% static 'portfolio/js/scramble.js' %}" defer></script>
+<script src="{% static 'portfolio/js/tech-stack.js' %}" defer></script>
+
+<style>
+    @keyframes gridMove {
+        0% {
+            background-position: 0 0;
+        }
+        100% {
+            background-position: 5rem 5rem;
+        }
+    }
+
+    .animate-grid-move {
+        animation: gridMove 10s linear infinite;
+    }
+
+    @keyframes fadeInDown {
+        from { opacity: 0; transform: translateY(-20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+        from { opacity: 0; transform: translateY(30px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    .animate-fade-in-down {
+        animation: fadeInDown 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+
+    .animate-fade-in-up {
+        animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+
+    .animate-fade-in {
+        animation: fadeIn 0.8s ease-out forwards;
+    }
+</style>
+
+{% endblock %}  

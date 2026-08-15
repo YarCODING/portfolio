@@ -1,0 +1,187 @@
+{% load static %}
+
+<section id="about" class="relative bg-[#0d0d0d] text-white py-24 overflow-hidden border-t border-dashed border-white/10 font-mono">
+    <div class="px-6 md:px-16 flex justify-between items-center text-xs font-mono text-gray-500 uppercase tracking-widest mb-6">
+        <span>01 // BIOGRAPHY</span>
+    </div>
+
+    <div class="relative w-full overflow-hidden whitespace-nowrap select-none py-6 my-4">
+        <div class="marquee-inner flex gap-8 text-[12vw] font-black uppercase tracking-tighter leading-none" style="will-change: transform;">
+            <span class="text-transparent header" style="-webkit-text-stroke: 2px rgba(255, 255, 255, 0.25);">ABOUT ME</span>
+            <span class="text-primary header">ABOUT ME</span>
+            <span class="text-transparent header" style="-webkit-text-stroke: 2px rgba(255, 255, 255, 0.25);">ABOUT ME</span>
+            <span class="text-primary header">ABOUT ME</span>
+        </div>
+    </div>
+
+    <div class="mx-auto max-w-[1700px] px-6 md:px-10 mt-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+            
+            <div class="lg:col-span-5 about-photo-wrapper flex flex-col gap-6">
+                <div class="relative aspect-4/5 rounded-lg overflow-hidden border border-white/10 bg-primary/20 group">
+                    <img src="{% static 'images/about-img.jpg' %}" alt="Yaroslav Zaitsev" 
+                         class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" >
+
+                    <div class="absolute bottom-4 left-4 right-4 p-4 bg-black/80 backdrop-blur-md border border-white/10 rounded flex justify-between items-center text-xs">
+                        <span class="text-gray-400">STATUS: <span class="text-rose-500">BUILDING & LEARNING</span></span>
+                        <span class="text-primary uppercase">[ TALLINN, EE ]</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lg:col-span-7 flex flex-col gap-10">
+                
+                <div class="about-text-block flex flex-col gap-4">
+                    <h3 class="text-xs uppercase tracking-widest text-primary font-bold">// WHO I AM</h3>
+                    <p class="text-xl md:text-2xl font-light leading-relaxed text-gray-200">
+                        I am a Backend Developer based in Tallinn. I specialize in designing 
+                        <span class="text-white font-semibold">reliable services</span>, scalable architectures, 
+                        and integrating intelligent external APIs (AI models, maps, payment systems).
+                    </p>
+                    <p class="text-sm md:text-base text-gray-400 leading-relaxed">
+                        I value clean code, database query optimization, and well-thought-out system logic. My core focus is ensuring backends run fast, stay easily maintainable, and are fully built for high load.
+                    </p>
+                </div>
+
+                <div class="about-stats grid grid-cols-2 sm:grid-cols-3 gap-4 border-y border-dashed border-white/10 py-6">
+                    <div class="flex flex-col gap-1">
+                        <span class="text-3xl md:text-4xl font-black text-primary">4+</span>
+                        <span class="text-xs text-gray-400 uppercase tracking-wider">Years Experience</span>
+                    </div>
+                    <div class="flex flex-col gap-1">
+                        <span class="text-3xl md:text-4xl font-black text-white">100%</span>
+                        <span class="text-xs text-gray-400 uppercase tracking-wider">Clean Code Focus</span>
+                    </div>
+                    <div class="flex flex-col gap-1 col-span-2 sm:col-span-1">
+                        <span class="text-3xl md:text-4xl font-black text-white">24/7</span>
+                        <span class="text-xs text-gray-400 uppercase tracking-wider">System Reliability</span>
+                    </div>
+                </div>
+
+                <div class="about-principles flex flex-col gap-4">
+                    <h3 class="text-xs uppercase tracking-widest text-primary font-bold">// ENGINEERING PRINCIPLES</h3>
+                    
+                    <div class="principles-list flex flex-col gap-4">
+                        <div class="principle-item p-4 border border-white/5 bg-white/1 hover:border-white/20 transition-colors rounded">
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="font-bold text-white uppercase text-sm">01. SCALABLE ARCHITECTURE</span>
+                                <span class="text-xs text-primary font-mono">[OPTIMIZED]</span>
+                            </div>
+                            <p class="text-xs text-gray-400">Designing data structures and models with future growth, high availability, and seamless feature expansion in mind.</p>
+                        </div>
+
+                        <div class="principle-item p-4 border border-white/5 bg-white/1 hover:border-white/20 transition-colors rounded">
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="font-bold text-white uppercase text-sm">02. PERFORMANCE & DATABASE EFFICIENCY</span>
+                                <span class="text-xs text-primary font-mono">[FAST]</span>
+                            </div>
+                            <p class="text-xs text-gray-400">Optimizing ORM queries, indexing, and eliminating performance bottlenecks directly at the database level.</p>
+                        </div>
+
+                        <div class="principle-item p-4 border border-white/5 bg-white/1 hover:border-white/20 transition-colors rounded">
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="font-bold text-white uppercase text-sm">03. SEAMLESS INTEGRATION</span>
+                                <span class="text-xs text-primary font-mono">[API-FIRST]</span>
+                            </div>
+                            <p class="text-xs text-gray-400">Building robust REST APIs, integrating third-party services (Stripe, Hugging Face, Geolocation), and connecting frontends seamlessly.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="stack" class="relative bg-[#0d0d0d] text-white py-28 overflow-hidden border-t border-dashed border-white/10 font-mono">
+    <div class="px-6 md:px-10 max-w-[1700px] mx-auto mb-8">
+        <h2 class="text-3xl md:text-5xl font-black uppercase text-white tracking-tight">
+            TOOLS & <span class="text-primary">TECHNOLOGIES</span>
+        </h2>
+    </div>
+
+    <div id="stack-container" class="relative w-full h-150 bg-white/1 border-y border-dashed border-white/10 overflow-hidden cursor-crosshair">
+        <div class="absolute inset-0 bg-[radial-gradient(rgba(255,255,255,0.08)_1px,transparent_1px)] bg-size-[24px_24px] pointer-events-none"></div>
+
+        <div class="tech-card absolute top-0 left-0 p-4 bg-black/80 backdrop-blur-md border border-white/15 rounded-xl flex items-center gap-3 select-none hover:border-primary transition-colors group shadow-lg">
+            <i class="fa-brands fa-python text-3xl text-yellow-400 group-hover:scale-110 transition-transform"></i>
+            <div>
+                <div class="text-sm font-bold text-white uppercase">Python</div>
+                <div class="text-[10px] text-gray-400 uppercase">[CORE LANGUAGE]</div>
+            </div>
+        </div>
+
+        <div class="tech-card absolute top-0 left-0 p-4 bg-black/80 backdrop-blur-md border border-white/15 rounded-xl flex items-center gap-3 select-none hover:border-primary transition-colors group shadow-lg">
+            <i class="devicon-django-plain colored text-3xl group-hover:scale-110 transition-transform"></i>
+            <div>
+                <div class="text-sm font-bold text-white uppercase">Django</div>
+                <div class="text-[10px] text-gray-400 uppercase">[BACKEND FRAMEWORK]</div>
+            </div>
+        </div>
+
+        <div class="tech-card absolute top-0 left-0 p-4 bg-black/80 backdrop-blur-md border border-white/15 rounded-xl flex items-center gap-3 select-none hover:border-primary transition-colors group shadow-lg">
+            <i class="devicon-postgresql-plain text-3xl text-[#336791] group-hover:scale-110 transition-transform"></i>
+            <div>
+                <div class="text-sm font-bold text-white uppercase">PostgreSQL</div>
+                <div class="text-[10px] text-gray-400 uppercase">[RELATIONAL DB]</div>
+            </div>
+        </div>
+
+        <div class="tech-card absolute top-0 left-0 p-4 bg-black/80 backdrop-blur-md border border-white/15 rounded-xl flex items-center gap-3 select-none hover:border-primary transition-colors group shadow-lg">
+            <i class="devicon-sqlite-plain text-3xl text-cyan-400 group-hover:scale-110 transition-transform"></i>
+            <div>
+                <div class="text-sm font-bold text-white uppercase">SQLite</div>
+                <div class="text-[10px] text-gray-400 uppercase">[EMBEDDED DB]</div>
+            </div>
+        </div>
+
+        <div class="tech-card absolute top-0 left-0 p-4 bg-black/80 backdrop-blur-md border border-white/15 rounded-xl flex items-center gap-3 select-none hover:border-primary transition-colors group shadow-lg">
+            <i class="fa-brands fa-tailwind-css text-3xl text-sky-400 group-hover:scale-110 transition-transform"></i>
+            <div>
+                <div class="text-sm font-bold text-white uppercase">Tailwind CSS</div>
+                <div class="text-[10px] text-gray-400 uppercase">[STYLING]</div>
+            </div>
+        </div>
+
+        <div class="tech-card absolute top-0 left-0 p-4 bg-black/80 backdrop-blur-md border border-white/15 rounded-xl flex items-center gap-3 select-none hover:border-primary transition-colors group shadow-lg">
+            <i class="fa-brands fa-font-awesome text-3xl text-[#418fde] group-hover:scale-110 transition-transform"></i>
+            <div>
+                <div class="text-sm font-bold text-white uppercase">Font Awesome</div>
+                <div class="text-[10px] text-gray-400 uppercase">[Icons]</div>
+            </div>
+        </div>
+
+        <div class="tech-card absolute top-0 left-0 p-4 bg-black/80 backdrop-blur-md border border-white/15 rounded-xl flex items-center gap-3 select-none hover:border-primary transition-colors group shadow-lg">
+            <i class="fa-brands fa-html5 text-3xl text-[#E34C26] group-hover:scale-110 transition-transform"></i>
+            <div>
+                <div class="text-sm font-bold text-white uppercase">HTML5</div>
+                <div class="text-[10px] text-gray-400 uppercase">[TEMPLATING]</div>
+            </div>
+        </div>
+
+        <div class="tech-card absolute top-0 left-0 p-4 bg-black/80 backdrop-blur-md border border-white/15 rounded-xl flex items-center gap-3 select-none hover:border-primary transition-colors group shadow-lg">
+            <i class="fa-solid fa-network-wired text-3xl text-orange-400 group-hover:scale-110 transition-transform"></i>
+            <div>
+                <div class="text-sm font-bold text-white uppercase">REST APIs</div>
+                <div class="text-[10px] text-gray-400 uppercase">[ARCHITECTURE]</div>
+            </div>
+        </div>
+
+        <div class="tech-card absolute top-0 left-0 p-4 bg-black/80 backdrop-blur-md border border-white/15 rounded-xl flex items-center gap-3 select-none hover:border-primary transition-colors group shadow-lg">
+            <i class="fa-brands fa-git-alt text-3xl text-red-500 group-hover:scale-110 transition-transform"></i>
+            <div>
+                <div class="text-sm font-bold text-white uppercase">Git</div>
+                <div class="text-[10px] text-gray-400 uppercase">[VERSION CONTROL]</div>
+            </div>
+        </div>
+
+        <div class="tech-card absolute top-0 left-0 p-4 bg-black/80 backdrop-blur-md border border-white/15 rounded-xl flex items-center gap-3 select-none hover:border-primary transition-colors group shadow-lg">
+            <i class="devicon-vscode-plain colored text-3xl group-hover:scale-110 transition-transform"></i>
+            <div>
+                <div class="text-sm font-bold text-white uppercase">VS Code</div>
+                <div class="text-[10px] text-gray-400 uppercase">[Coding IDE]</div>
+            </div>
+        </div>
+    </div>
+</section>

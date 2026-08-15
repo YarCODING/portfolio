@@ -1,0 +1,183 @@
+{% load static %}
+
+<section id="projects" class="relative bg-[#0a0a0f] text-white">
+    <div id="projects-container" class="sticky top-0 flex h-screen w-full flex-col justify-center overflow-hidden px-6 md:px-16 pt-22 pb-10">
+        <div class="px-6 md:px-10 flex justify-between items-center text-xs text-gray-500 uppercase tracking-widest mb-4">
+            <span>02 // PROJECTS</span>
+        </div>
+
+        <div class="relative w-full overflow-hidden whitespace-nowrap select-none py-2 my-2">
+            <div id="projects-marquee" class="flex w-max will-change-transform">
+                
+                <div class="flex gap-8 text-[10vw] font-black uppercase tracking-tighter leading-none shrink-0 pr-8">
+                    <span class="text-transparent header" style="-webkit-text-stroke: 2px rgba(255, 255, 255, 0.25);">FEATURED</span>
+                    <span class="text-primary header">WORK</span>
+                    <span class="text-transparent header" style="-webkit-text-stroke: 2px rgba(255, 255, 255, 0.25);">FEATURED</span>
+                    <span class="text-primary header">WORK</span>
+                </div>
+
+                <div class="flex gap-8 text-[10vw] font-black uppercase tracking-tighter leading-none shrink-0 pr-8">
+                    <span class="text-transparent header" style="-webkit-text-stroke: 2px rgba(255, 255, 255, 0.25);">FEATURED</span>
+                    <span class="text-primary header">WORK</span>
+                    <span class="text-transparent header" style="-webkit-text-stroke: 2px rgba(255, 255, 255, 0.25);">FEATURED</span>
+                    <span class="text-primary header">WORK</span>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="projects-track" class="flex gap-8 md:gap-12 items-center will-change-transform">
+            
+            <article class="project-card relative min-w-[85vw] md:min-w-[70vw] lg:min-w-[60vw] h-[60vh] rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl overflow-hidden flex flex-col justify-between p-6 md:p-10 group transition-colors duration-500 hover:border-primary/50 shrink-0" data-scramble-group>
+                
+                <div class="absolute inset-0 z-0 overflow-hidden">
+                    <img src="{% static 'images/demos/reunite-demo.png' %}" alt="Reunite App" class="w-full h-full object-cover object-center filter grayscale opacity-30 group-hover:scale-105 group-hover:grayscale-0 group-hover:opacity-60 transition-all duration-700 ease-out">
+                    <div class="absolute inset-0 bg-linear-to-t from-[#0a0a0f] via-[#0a0a0f]/70 to-transparent"></div>
+                </div>
+
+                <div class="relative z-10 flex justify-between items-start">
+                    <span class="text-4xl md:text-6xl font-black text-white/30 font-mono">01</span>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 rounded-full text-xs font-mono bg-white/10 text-white backdrop-blur-md border border-white/10">Python</span>
+                        <span class="px-3 py-1 rounded-full text-xs font-mono bg-white/10 text-white backdrop-blur-md border border-white/10">Django</span>
+                        <span class="px-3 py-1 rounded-full text-xs font-mono bg-primary/20 text-primary backdrop-blur-md border border-primary/30">AI Vector Match</span>
+                    </div>
+                </div>
+
+                <div class="relative z-10 flex flex-col gap-4 max-w-2xl">
+                    <h3 class="scramble-text text-3xl md:text-5xl font-black uppercase tracking-tight text-white group-hover:text-primary transition-colors">
+                        Reunite
+                    </h3>
+                    <p class="text-sm md:text-base text-gray-300 line-clamp-3 font-light">
+                        Lost-and-found web platform featuring automated item matching using vector embeddings. Real-time notifications and intuitive geo-search interface.
+                    </p>
+                    
+                    <div class="flex items-center gap-4 pt-2">
+                        <a href="https://github.com/YarCODING/reunite" target="_blank" rel="noopener noreferrer" 
+                           class="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white/10 hover:bg-white text-white hover:text-black font-semibold text-sm transition-all border border-white/10">
+                            <i class="fa-brands fa-github text-lg"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://reunite-app.onrender.com/" target="_blank" rel="noopener noreferrer" 
+                           class="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-primary hover:bg-primary/80 text-black font-semibold text-sm transition-all">
+                            <i class="fa-solid fa-arrow-up-right-from-square text-sm"></i>
+                            <span>Live Demo</span>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-card relative min-w-[85vw] md:min-w-[70vw] lg:min-w-[60vw] h-[60vh] rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl overflow-hidden flex flex-col justify-between p-6 md:p-10 group transition-colors duration-500 hover:border-primary/50 shrink-0" data-scramble-group>
+                
+                <div class="absolute inset-0 z-0 overflow-hidden">
+                    <img src="{% static 'images/demos/buspace-demo.png' %}" alt="Business Space Demo" class="w-full h-full object-cover object-center filter grayscale opacity-30 group-hover:scale-105 group-hover:grayscale-0 group-hover:opacity-60 transition-all duration-700 ease-out">
+                    <div class="absolute inset-0 bg-linear-to-t from-[#0a0a0f] via-[#0a0a0f]/70 to-transparent"></div>
+                </div>
+
+                <div class="relative z-10 flex justify-between items-start">
+                    <span class="text-4xl md:text-6xl font-black text-white/30 font-mono">02</span>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 rounded-full text-xs font-mono bg-white/10 text-white backdrop-blur-md border border-white/10">Python</span>
+                        <span class="px-3 py-1 rounded-full text-xs font-mono bg-white/10 text-white backdrop-blur-md border border-white/10">Django</span>
+                    </div>
+                </div>
+
+                <div class="relative z-10 flex flex-col gap-4 max-w-2xl">
+                    <h3 class="scramble-text text-3xl md:text-5xl font-black uppercase tracking-tight text-white group-hover:text-primary transition-colors">
+                        Business Space
+                    </h3>
+                    <p class="text-sm md:text-base text-gray-300 line-clamp-3 font-light">
+                        Comprehensive workspace & conference room booking platform featuring automated scheduling, 
+                        interactive availability management, and optimized database queries for seamless user experience.
+                    </p>
+                    
+                    <div class="flex items-center gap-4 pt-2">
+                        <a href="https://github.com/YarCODING/businessspace" target="_blank" rel="noopener noreferrer" 
+                           class="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white/10 hover:bg-white text-white hover:text-black font-semibold text-sm transition-all border border-white/10">
+                            <i class="fa-brands fa-github text-lg"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://businessspace.pythonanywhere.com/" target="_blank" rel="noopener noreferrer" 
+                           class="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-primary hover:bg-primary/80 text-black font-semibold text-sm transition-all">
+                            <i class="fa-solid fa-arrow-up-right-from-square text-sm"></i>
+                            <span>Live Demo</span>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-card relative min-w-[85vw] md:min-w-[70vw] lg:min-w-[60vw] h-[60vh] rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl overflow-hidden flex flex-col justify-between p-6 md:p-10 group transition-colors duration-500 hover:border-primary/50 shrink-0" data-scramble-group>
+                
+                <div class="absolute inset-0 z-0 overflow-hidden">
+                    <img src="{% static 'images/demos/evenb-demo.png' %}" alt="Evenb Demo" class="w-full h-full object-cover object-center filter grayscale opacity-30 group-hover:scale-105 group-hover:grayscale-0 group-hover:opacity-60 transition-all duration-700 ease-out">
+                    <div class="absolute inset-0 bg-linear-to-t from-[#0a0a0f] via-[#0a0a0f]/70 to-transparent"></div>
+                </div>
+
+                <div class="relative z-10 flex justify-between items-start">
+                    <span class="text-4xl md:text-6xl font-black text-white/30 font-mono">03</span>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 rounded-full text-xs font-mono bg-white/10 text-white backdrop-blur-md border border-white/10">Python</span>
+                        <span class="px-3 py-1 rounded-full text-xs font-mono bg-white/10 text-white backdrop-blur-md border border-white/10">Fast Api</span>
+                        <span class="px-3 py-1 rounded-full text-xs font-mono bg-white/10 text-white backdrop-blur-md border border-white/10">Next.js</span>
+                    </div>
+                </div>
+
+                <div class="relative z-10 flex flex-col gap-4 max-w-2xl">
+                    <h3 class="scramble-text text-3xl md:text-5xl font-black uppercase tracking-tight text-white group-hover:text-primary transition-colors">
+                        Evenb
+                    </h3>
+                    <p class="text-sm md:text-base text-gray-300 line-clamp-3 font-light">
+                        Modern event booking web app designed for seamless ticket reservations, interactive event management, and instant schedule updates.
+                    </p>
+                    
+                    <div class="flex items-center gap-4 pt-2">
+                        <a href="https://github.com/YarCODING/evenb" target="_blank" rel="noopener noreferrer" 
+                           class="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white/10 hover:bg-white text-white hover:text-black font-semibold text-sm transition-all border border-white/10">
+                            <i class="fa-brands fa-github text-lg"></i>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-card relative min-w-[85vw] md:min-w-[70vw] lg:min-w-[60vw] h-[60vh] rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl overflow-hidden flex flex-col justify-between p-6 md:p-10 group transition-colors duration-500 hover:border-primary/50 shrink-0" data-scramble-group>
+                
+                <div class="absolute inset-0 z-0 overflow-hidden">
+                    <img src="{% static 'images/demos/greencart-demo.png' %}" alt="Evenb Demo" class="w-full h-full object-cover object-center filter grayscale opacity-30 group-hover:scale-105 group-hover:grayscale-0 group-hover:opacity-60 transition-all duration-700 ease-out">
+                    <div class="absolute inset-0 bg-linear-to-t from-[#0a0a0f] via-[#0a0a0f]/70 to-transparent"></div>
+                </div>
+
+                <div class="relative z-10 flex justify-between items-start">
+                    <span class="text-4xl md:text-6xl font-black text-white/30 font-mono">04</span>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 rounded-full text-xs font-mono bg-white/10 text-white backdrop-blur-md border border-white/10">Python</span>
+                        <span class="px-3 py-1 rounded-full text-xs font-mono bg-white/10 text-white backdrop-blur-md border border-white/10">Flask</span>
+                        <span class="px-3 py-1 rounded-full text-xs font-mono bg-white/10 text-white backdrop-blur-md border border-white/10">React.js</span>
+                    </div>
+                </div>
+
+                <div class="relative z-10 flex flex-col gap-4 max-w-2xl">
+                    <h3 class="scramble-text text-3xl md:text-5xl font-black uppercase tracking-tight text-white group-hover:text-primary transition-colors">
+                        Greencart
+                    </h3>
+                    <p class="text-sm md:text-base text-gray-300 line-clamp-3 font-light">
+                        Full-stack online grocery platform equipped with automated cart calculation, category filtering, and high-speed API endpoints.
+                    </p>
+                    
+                    <div class="flex items-center gap-4 pt-2">
+                        <a href="https://github.com/YarCODING/greencart" target="_blank" rel="noopener noreferrer" 
+                           class="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white/10 hover:bg-white text-white hover:text-black font-semibold text-sm transition-all border border-white/10">
+                            <i class="fa-brands fa-github text-lg"></i>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+
+        <p class="mt-4 text-xs font-mono text-gray-500">
+        * Note: Live demos are hosted on free cloud instances and may occasionally be offline or require a moment to wake up.
+        </p>
+    </div>
+</section>
